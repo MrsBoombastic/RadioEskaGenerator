@@ -15,7 +15,7 @@ const run = async () => {
         .then(res => res.text())
         .then(body => {
             hash = parser.parse(body).querySelector("#icsu").rawAttributes.value
-            url = await findURL(body)
+            url = findURL(body)
         });
     const data = JSON.parse('{"' + decodeURI(hash).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}')
     await console.log(data.hash, data.rip, data)
