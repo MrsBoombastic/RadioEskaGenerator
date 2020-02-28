@@ -3,11 +3,11 @@ const run = async () => {
     const parser = require('node-html-parser');
     let hash = ""
     let url = ""
-    async function findURL(input) {
+    function findURL(input) {
         const lines = input.split("\n");
         for (let i = 0; i < lines.length; i++) {
             if (lines[i].includes("var streamUrl =")) {
-                return lines[i].replace(/\s/g,'').replace('varstreamUrl=\'', '').replace(`?'.replace('.aac','.mp3');`, '').replace('.aac', '.mp3')
+                return lines[i].replace(/\s/g, '').replace('varstreamUrl=\'', '').replace(`?'.replace('.aac','.mp3');`, '').replace('.aac', '.mp3')
             }
         }
     }
