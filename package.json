@@ -1,13 +1,16 @@
 {
   "name": "radioeskagenerator",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Generowanie streamów do Eski. Bez ściemy i ukrywania kodu.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "radio",
+    "eska"
+  ],
+  "author": "MrBoombastic",
   "license": "WTFPL",
   "dependencies": {
     "node-fetch": "^2.6.0",
